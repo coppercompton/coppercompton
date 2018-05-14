@@ -1,14 +1,12 @@
 .container {
     display: grid;
     grid-template-columns: 100px 1fr 1fr 150px;
-    grid-template-rows: 200px minmax(100px, max-content) 100px;
+    grid-template-rows: minmax(100px, max-content) minmax(100px, max-content) minmax(100px, max-content);
     grid-gap: 5px;
 }
-.container>div {
+.container div {
     background-color: rgba(173, 101, 101, 0.8);
-    text-align: center;
-    padding:20px 0;
-    font-size: 30px;
+    padding:10px;
 }
 .header{
     grid-column:  1/4;
@@ -21,7 +19,11 @@
     grid-area: 3/2/4/5
 }
 .photo{
-    grid-area: 2/2/3/4
+    grid-area: 2/2/3/4;
+    padding:30px
+}
+.photo img{
+    width:100%;
 }
 .trophies{
     grid-row: 2/4; 
