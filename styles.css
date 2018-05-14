@@ -4,9 +4,9 @@
     grid-template-rows: minmax(100px, max-content) minmax(100px, max-content) minmax(100px, max-content);
     grid-gap: 5px;
 }
-.container div {
+.container>div {
     background-color: rgba(173, 101, 101, 0.8);
-    padding:10px;
+    padding:10px
 }
 .header{
     grid-column:  1/4;
@@ -20,11 +20,14 @@
 }
 .photo{
     grid-area: 2/2/3/4;
-    padding:30px
+    padding:0 !important
 }
 .photo img{
     width:100%;
 }
 .trophies{
     grid-row: 2/4; 
+}
+.trophies img {
+    width:100%;
 }
